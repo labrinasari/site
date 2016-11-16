@@ -58,6 +58,29 @@ li a:hover:not(.active) {
 .active {
     background-color: #00d0ff;
 }
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+div.galer{
+    text-align: center;
+}
 </style>
 <img src="img/logoinfoset.png">
 </head>
@@ -84,9 +107,27 @@ li a:hover:not(.active) {
   <li style="float:right"><a href="#carrinho">Carrinho</a></li>
 </ul>
 
-<h3>COISAS</h3>
+<center><h3>OFERTAS DO MÊS</h3></center>
+<div class="galer">
+<div class="img">
+  <a target="_blank" href="img/xtrax.jpg">
+ <img src='img/xtrax.jpg' width='500' height='500' onmouseover="this.src='img/xtraxop.jpg';" onmouseout="this.src='img/xtrax.jpg';" />
+  </a>
+</div>
 
+<div class="img">
+  <a target="_blank" href="img/zenf.jpg">
+ <img src='img/zenf.jpg' width='500' height='500' onmouseover="this.src='img/zenfop.jpg';" onmouseout="this.src='img/zenf.jpg';" />
+  </a>
+</div>
 
+<div class="img">
+  <a target="_blank" href="img/nob.jpg">
+ <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
+  </a>
+</div>
+</div>
 </body>
 </html>
 
+CENTER IMGGGGGGG
