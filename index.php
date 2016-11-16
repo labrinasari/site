@@ -59,6 +59,7 @@ li a:hover:not(.active) {
     background-color: #00d0ff;
 }
 </style>
+<img src="img/logoinfoset.png">
 </head>
 <body>
 
