@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 <style>
 ul.animatedunderlinemenu{
   list-style: none;
@@ -99,9 +106,6 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-.body{
-    background-color:black;
-}
 </style>
 <img src="img/untitled.jpg" width="100%" height="100%">
 </head>
@@ -165,6 +169,68 @@ div.desc {
  <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
   </a>
 </div>
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>info<span>set</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Sobre</a>
+					·
+					<a href="#">Produtos</a>
+					·
+					<a href="#">Serviços</a>
+					·
+					<a href="#">FAQ</a>
+					·
+					<a href="#">Contato</a>
+                                        ·
+					<a href="#">Conta</a>
+				</p>
+
+				<p class="footer-company-name">InfoSet &copy; 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Estr. das Madeiras, 3000</span> Rio do Sul, Brasil</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+55 47 99987-6820</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:andre_teles@estudante.sc.senai.br">andre_teles@estudante.sc.senai.br</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Sobre a empresa</span>
+					Empresa de informática que preza pela qualidade de atendimento e satisfação do cliente. Contamos com dois sócios, André e Sabrina.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
 </body>
 </html>
 
