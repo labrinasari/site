@@ -7,7 +7,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
+    font-family: arial, sans-serif;
 }
 
 li {
@@ -16,14 +17,14 @@ li {
 
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: #b32d86;
 }
 
 li.dropdown {
@@ -33,7 +34,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #094794;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -52,17 +53,21 @@ li.dropdown {
     display: block;
 }
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #b32d86;;
 }
 
 .active {
-    background-color: #00d0ff;
+    background-color: #119ced;
+    color:white;
 }
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 div.img:hover {
@@ -78,11 +83,9 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-div.galer{
-    text-align: center;
-}
+
 </style>
-<img src="img/logoinfoset.png">
+<img src="img/pot.jpg">
 </head>
 <body>
 
@@ -95,7 +98,7 @@ div.galer{
       <a href="#">Notebook</a>
       <a href="#">Teclado</a>
       <a href="#">Mouse</a>
-      <a href="#">Smartphone</a>
+      <a href="#"></i> Smartphone</a>
       <a href="#">TV/Tela</a>
       <a href="#">Console</a>
     </div>
@@ -108,7 +111,6 @@ div.galer{
 </ul>
 
 <center><h3>OFERTAS DO MÊS</h3></center>
-<div class="galer">
 <div class="img">
   <a target="_blank" href="img/xtrax.jpg">
  <img src='img/xtrax.jpg' width='500' height='500' onmouseover="this.src='img/xtraxop.jpg';" onmouseout="this.src='img/xtrax.jpg';" />
@@ -125,7 +127,6 @@ div.galer{
   <a target="_blank" href="img/nob.jpg">
  <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
   </a>
-</div>
 </div>
 </body>
 </html>
