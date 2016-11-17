@@ -2,94 +2,106 @@
 <html>
 <head>
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+ul.animatedunderlinemenu{
+  list-style: none;
+  margin: 0;
+	margin-bottom: 50px; /* add spacing between UL and rest of content for demo purposes */
+  padding:0;
+  text-align:center; /* enter "left", "right", or "center" to orient the menu accordingly */
+  font: 'Lato', sans-serif; /* use google custom font "Lato" */
 }
 
-li {
-    float: left;
+ul.animatedunderlinemenu li{
+  display: inline;
+  margin-right:25px; /* spacing between each menu item */
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
+ul.animatedunderlinemenu li a{
+  position: relative;
+	display: inline-block;
+  color: black;
+  padding: 2px 3px;
+  padding-bottom: 8px; /*spacing between each menu item and underline beneath it */
+  text-decoration: none;
+  margin-bottom: 20px; /* spacing between A elements, relevant when menu becomes multi-lined */
+  letter-spacing: .1em;
+}
+
+ul.animatedunderlinemenu li a:after{
+  position: absolute;
+	display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #941881;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  -wekkit-transition: all .3s;
+  transition: all .3s;
+}
+
+ul.animatedunderlinemenu li a:hover:after{
+  width: 100%; /* increase underline width to 100% */
+  opacity: 1;
+}
+
+/* //// Expand underline effect //// */
+
+ul.animatedunderlinemenu.expand li a:after{
+  background: #CAF4F9;
+	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
+	transition: width .3s, opacity .3s, height .3s .3s;
+}
+
+ul.animatedunderlinemenu.expand li a:hover:after{
+  width: 100%; /* increase underline width to 100% */
+	height: 10px; /* increase underline height to 10px */
+  opacity: 1;
+}
+
+/* //// Expand underline upwards effect //// */
+
+ul.animatedunderlinemenu.expandup li a:after{
+  background: #CAF4F9;
+	top: auto;
+	bottom: 0;
+	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
+	transition: width .3s, opacity .3s, height .3s .3s;
+}
+
+ul.animatedunderlinemenu.expandup li a:hover:after{
+  width: 100%; /* increase underline width to 100% */
+	height: 100%; /* increase underline height to 100% */
+  opacity: 1;
+}
+p{
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #black}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #00d0ff;
 }
 </style>
-<img src="img/logoinfoset.png">
+<img src="img/untitled.jpg" width="100%" height="100%">
 </head>
 <body>
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#sobre">Sobre</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Produtos</a>
-    <div class="dropdown-content">
-      <a href="#">Notebook</a>
-      <a href="#">Teclado</a>
-      <a href="#">Mouse</a>
-      <a href="#">Smartphone</a>
-      <a href="#">TV/Tela</a>
-      <a href="#">Console</a>
-    </div>
-  </li>
-    <li><a href="#servicos">Serviços</a></li>
-  <li><a href="#faq">FAQ</a></li>
-  <li><a href="#contato">Contato</a></li>
-  <li style="float:right"><a href="#conta">Conta</a></li>
-  <li style="float:right"><a href="#carrinho">Carrinho</a></li>
+<ul class="animatedunderlinemenu">
+	<li><a href="http://www.dynamicdrive.com">Home</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/">Sobre</a></li>
+	<li><a href="http://www.cssdrive.com">Produtos</a></li>
+	<li><a href="http://www.javascriptkit.com">Serviços</a></li>
+	<li><a href="http://www.cmsroundup.com">FAQ</a></li>
+	<li><a href="http://www.cmsroundup.com">Contato</a></li>
+	<li><a href="http://www.cmsroundup.com">Conta</a></li>
 </ul>
 
-<p>A InfoSet foi fundada no ano de 2016 com a união de dois sócios, com o intuito de abranger</p>
-<p>o comércio eletrônico online.</p>
-<p>Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com </p>
-<p>obtenção de formas de pagamentos acessíveis aos clientes. </p>
-<p>A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
 
+<p>A InfoSet foi fundada no ano de 2016 com a união de dois sócios, com o intuito de abrange o comércio eletrônico online.
+<br>
+Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com 
+obtenção de formas de pagamentos acessíveis aos clientes.
+<br>
+A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
+<img src="img/so.jpg" witdh="500px" height="100px">
 </body>
 </html>
 
