@@ -76,32 +76,30 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
 	height: 100%; /* increase underline height to 100% */
   opacity: 1;
 }
-p{
+#sobre {
+    font-size: 15px;
+}
+#sobre #titulos {
     text-align: center;
+    font-size: 20px;
 }
 </style>
-<img src="img/untitled.jpg" width="100%" height="100%">
 </head>
 <body>
-
-<ul class="animatedunderlinemenu">
-	<li><a href="http://www.dynamicdrive.com">Home</a></li>
-	<li><a href="http://www.dynamicdrive.com/style/">Sobre</a></li>
-	<li><a href="http://www.cssdrive.com">Produtos</a></li>
-	<li><a href="http://www.javascriptkit.com">Serviços</a></li>
-	<li><a href="http://www.cmsroundup.com">FAQ</a></li>
-	<li><a href="http://www.cmsroundup.com">Contato</a></li>
-	<li><a href="http://www.cmsroundup.com">Conta</a></li>
-</ul>
-
-
-<p>A InfoSet foi fundada no ano de 2016 com a união de dois sócios, com o intuito de abrange o comércio eletrônico online.
-<br>
-Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com 
-obtenção de formas de pagamentos acessíveis aos clientes.
-<br>
-A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
-<img src="img/so.jpg" witdh="500px" height="100px">
+    <div id="sobre">
+        <div id="titulos">
+            <h3>Sobre a InfoSet</h3>
+        </div>
+        <p>A InfoSet foi fundada no ano de 2016 com a união de dois sócios, com o intuito de abranger o comércio eletrônico online.
+        <br>
+        Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com 
+        obtenção de formas de pagamentos acessíveis aos clientes.
+        <br>
+        A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
+        <div id="titulos">
+            <h3>Estrutura Fisica</h3>
+        </div>
+    </div>
 </body>
 </html>
 
