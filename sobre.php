@@ -82,6 +82,8 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
 #sobre #titulos {
     text-align: center;
     font-size: 20px;
+    color: #119ced;
+    font-family:'GENISO';
 }
 </style>
 </head>
@@ -90,12 +92,14 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
         <div id="titulos">
             <h3>Sobre a InfoSet</h3>
         </div>
+        <br>
         <p>A InfoSet foi fundada no ano de 2016 com a união de dois sócios, com o intuito de abranger o comércio eletrônico online.
         <br>
         Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com 
         obtenção de formas de pagamentos acessíveis aos clientes.
         <br>
         A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
+        <br>
         <div id="titulos">
             <h3>Estrutura Fisica</h3>
         </div>
