@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>InfoSet Informática</title>
     <meta charset="utf-8">
     	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
@@ -107,67 +108,35 @@ div.desc {
     text-align: center;
 }
 </style>
-<img src="img/untitled.jpg" width="100%" height="100%">
+
 </head>
 <body>
+    <div id="header">
+        <img src="img/untitled.jpg" width="100%" height="100%">
+    </div>
+    <div id="menu">
+        <?php
+            include "menu.php"
+        ?>
+    </div>
 
-<ul class="animatedunderlinemenu">
-	<li><a href="http://www.dynamicdrive.com">Home</a></li>
-	<li><a href="http://www.dynamicdrive.com/style/">Sobre</a></li>
-	<li><a href="http://www.cssdrive.com">Produtos</a></li>
-	<li><a href="http://www.javascriptkit.com">Serviços</a></li>
-	<li><a href="http://www.cmsroundup.com">FAQ</a></li>
-	<li><a href="http://www.cmsroundup.com">Contato</a></li>
-	<li><a href="http://www.cmsroundup.com">Conta</a></li>
-</ul>
-
-<center><h3>OFERTAS DO MÊS</h3></center>
-<div class="img">
-  <a target="_blank" href="img/xtrax.jpg">
- <img src='img/xtrax.jpg' width='500' height='500' onmouseover="this.src='img/xtraxop.jpg';" onmouseout="this.src='img/xtrax.jpg';" />
-  </a>
-</div>
-
-<div class="img">
-  <a target="_blank" href="img/zenf.jpg">
- <img src='img/zenf.jpg' width='500' height='500' onmouseover="this.src='img/zenfop.jpg';" onmouseout="this.src='img/zenf.jpg';" />
-  </a>
-</div>
-
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
-</div>
-<div class="img">
-  <a target="_blank" href="img/nob.jpg">
- <img src='img/nob.jpg' width='500' height='500' onmouseover="this.src='img/nobop.jpg';" onmouseout="this.src='img/nob.jpg';" />
-  </a>
+    <div id="content">
+        <div id="content-main">
+            <?php
+                    $pg = $_GET["pg"];
+                    if (!empty($pg)) {
+                        include $pg. '.php';
+                    } else {
+                        include 'home.php';
+                    }
+            ?>
+        </div>    
+    </div>
+    
+<div id="footer">
+    <?php
+        include "rodape.php"
+    ?>
 </div>
 		<footer class="footer-distributed">
 
