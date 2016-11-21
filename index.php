@@ -134,6 +134,7 @@ div.desc {
         </div>    
     </div>
     
+    
 <div id="footer">
     <?php
         include "rodape.php"

@@ -98,8 +98,13 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
         Além da variedade de produtos de alta qualidade, há uma ampla disponibilidade de entregas para diversos estados brasileiros, com 
         obtenção de formas de pagamentos acessíveis aos clientes.
         <br>
-        A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.</p>
+        A empresa preza por agilidade, qualidade de atendimento, velocidade de entrega e respeito ao consumidor.
         <br>
+        A cada nova produto, buscamos oferecer o que temos de melhor, com nosso maior empenho e esforço, procurando 
+            sempre a superação sobre nós mesmos, para que a cada dia nós possamos disponibilizar produtos de qualidade e que possam agradar todos.
+            <br>
+        Nossa visão se renova a cada dia. Procuramos sempre a evolução, e fazemos o nosso máximo para que essa
+ evolução possa ser transmitida a todos nossos e clientes.</p>
         <div id="titulos">
             <h3>Estrutura Fisica</h3>
         </div>
