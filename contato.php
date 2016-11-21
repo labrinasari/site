@@ -1,8 +1,19 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<form>
+    <fieldset>
+        <legend>Contato</legend>
+        <label>Nome:</label> 
+        <input type="text" name="nome">
+	<br>
+	<label>Sobrenome:</label>
+	<input type="text" name="sobrenome">
+	<br>
+        <label>E-mail:</label>
+	<input type="text" name="email">
+	<br>
+        <label>Mensagem:</label>
+	<textarea rows="10" cols="80"></textarea>
+        <br>
+        <input type="button" value="Atualizar">
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
