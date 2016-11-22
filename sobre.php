@@ -106,7 +106,7 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
         Nossa visão se renova a cada dia. Procuramos sempre a evolução, e fazemos o nosso máximo para que essa
  evolução possa ser transmitida a todos nossos e clientes.</p>
         <div id="titulos">
-            <h3>Estrutura Fisica</h3>
+            <h3>Estrutura Física</h3>
         </div>
     </div>
 </body>
