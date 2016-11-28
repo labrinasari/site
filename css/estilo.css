@@ -29,77 +29,87 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
-#container #menu ul.animatedunderlinemenu{
-  list-style: none;
-  margin: 0;
-	margin-bottom: 50px; /* add spacing between UL and rest of content for demo purposes */
-  padding:0;
-  text-align:center; /* enter "left", "right", or "center" to orient the menu accordingly */
-  font: 'Lato', sans-serif; /* use google custom font "Lato" */
+#menu {
+    float: left;
+}
+#content {
+    float: left;
+}
+.photo-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
 }
 
-#container #menu ul.animatedunderlinemenu li{
-  display: inline;
-  margin-right:25px; /* spacing between each menu item */
-}
-
-#container #menu ul.animatedunderlinemenu li a{
-  position: relative;
+.photo-grid li {
+	border: 5px solid white;
 	display: inline-block;
-  color: black;
-  padding: 2px 3px;
-  padding-bottom: 8px; /*spacing between each menu item and underline beneath it */
-  text-decoration: none;
-  margin-bottom: 20px; /* spacing between A elements, relevant when menu becomes multi-lined */
-  letter-spacing: .1em;
+	margin: 1em;
+	width: 289px;
 }
 
-#container #menu ul.animatedunderlinemenu li a:after{
-  position: absolute;
+.photo-grid img {
 	display: block;
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #941881;
-  top: 100%;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  -wekkit-transition: all .3s;
-  transition: all .3s;
+	height: auto;
+	max-width: 100%;
 }
 
-#container #menu ul.animatedunderlinemenu li a:hover:after{
-  width: 100%; /* increase underline width to 100% */
-  opacity: 1;
+.photo-grid figure {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 289px;
 }
 
-/* //// Expand underline effect //// */
-
-#container #menu ul.animatedunderlinemenu.expand li a:after{
-  background: #CAF4F9;
-	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
-	transition: width .3s, opacity .3s, height .3s .3s;
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
 }
 
-#container #menu ul.animatedunderlinemenu.expand li a:hover:after{
-  width: 100%; /* increase underline width to 100% */
-	height: 10px; /* increase underline height to 10px */
-  opacity: 1;
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
 }
 
-/* //// Expand underline upwards effect //// */
-
-#container #menu ul.animatedunderlinemenu.expandup li a:after{
-  background: #CAF4F9;
-	top: auto;
-	bottom: 0;
-	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
-	transition: width .3s, opacity .3s, height .3s .3s;
-}
-
-#container #menu ul.animatedunderlinemenu.expandup li a:hover:after{
-  width: 100%; /* increase underline width to 100% */
-	height: 100%; /* increase underline height to 100% */
-  opacity: 1;
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
 }
