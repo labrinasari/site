@@ -1,36 +1,32 @@
-
+<?php
+require_once 'dao/DaoProduto.php';
+$DaoProduto = DaoProduto::getInstance();
+if (!isset($_GET["cat"]) || empty($_GET["cat"])) {
+    $dadosProduto = $DaoProduto->listar();
+} else {
+    $dadosProduto = $DaoProduto->listarPorMarca($_GET["cat"]);
+}
+?>
 <center><h3>Nossos Produtos</h3></center>
+<?php
+foreach ($dadosProduto as $rowProduto) {
+    ?>
 <ul class="photo-grid">
 	<li>
-            <a href="img/mouse.jpg">
+            <a href="?pg=detalhes&id=<?= $rowProduto["id_produto"] ?>">
 			<figure>
-				<img src="img/mouse.jpg" height="250" width="250" alt="Mouse">
-				<figcaption><p>Mouse</p></figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-            <a href="img/xtrax.jpg">
-			<figure>
-				<img src="img/xtrax.jpg" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>Câmera de Ação XTrax</p></figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-            <a href="img/gtx.png">
-			<figure>
-				<img src="img/gtx.png" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>Placa de Vídeo GTX</p></figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-            <a href="img/nob.jpg">
-			<figure>
-				<img src="img/nob.jpg" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>No-Break</p></figcaption>
+				<img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>">
+			            <figcaption><p><?= $rowProduto["descricao"] ?>
+                                    <br>
+                                    R$ <?= $rowProduto["preco"] ?>
+                                    <br>
+                                    10x no cartão sem juros
+                                    </p>
+                                </figcaption>
 			</figure>
 		</a>
 	</li>
 </ul>
+    <?php
+}
+?>

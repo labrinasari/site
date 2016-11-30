@@ -1,13 +1,21 @@
 <link rel="stylesheet" href="css/style.css">
 <center><h3>OFERTAS DO MÊS</h3></center>
-<ul class="photo-grid">
+<?php
+require_once 'dao/DaoProduto.php';
+$DaoProduto = DaoProduto::getInstance();
+$dadosProduto = $DaoProduto->listarPromocao();
+?>
+<?php
+foreach ($dadosProduto as $rowProduto) {
+?>
+<ul class="photo-grid">     
 	<li>
-            <a href="img/mouse.jpg">
+            <a href="?pg=detalhes&id=<?= $rowProduto["id_produto"] ?>">
 			<figure>
-				<img src="img/mouse.jpg" height="250" width="250" alt="Mouse">
-				<figcaption><p>Mouse Cougar 700k
+				<img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>" height="250" width="250" alt="Mouse">
+				<figcaption><p><?= $rowProduto["descricao"] ?>
                                     <br>
-                                    R$ 800,00
+                                    R$ <?= $rowProduto["preco"] ?>
                                     <br>
                                     10x no cartão sem juros
                                     </p>
@@ -15,43 +23,7 @@
 			</figure>
 		</a>
 	</li>
-	<li>
-            <a href="img/xtrax.jpg">
-			<figure>
-				<img src="img/xtrax.jpg" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>Câmera de Ação XTrax
-                                        <br>
-                                        R$ 9.999,00
-                                        <br>
-                                        10x no cartão sem juros
-                                    </p></figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-            <a href="img/gtx.png">
-			<figure>
-				<img src="img/gtx.png" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>Placa de Vídeo GTX
-                                        <br>
-                                        R$ 1.000,00 
-                                        <br>
-                                        10x no cartão sem juros
-                                    </p></figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-            <a href="img/nob.jpg">
-			<figure>
-				<img src="img/nob.jpg" height="250" width="250" alt="Arc de Triomphe">
-				<figcaption><p>No-Break
-                                        <br>
-                                    R$ 400,00
-                                    <br>
-                                    10x no cartão sem juros
-                                    </p></figcaption>
-			</figure>
-		</a>
-	</li>
 </ul>
+    <?php
+}
+?>
