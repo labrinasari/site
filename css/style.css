@@ -68,3 +68,10 @@
     -webkit-transform: translateY(40px);
     transform: translateY(40px);
 }
+
+a:link    {
+    color:black; background-color:transparent; text-decoration:none
+}
+a:hover   {
+    color:blue; background-color:transparent; text-decoration:none
+}
