@@ -7,5 +7,4 @@
 <p>Manutenção preventiva;</p>
 <p>Manutenção de Notebooks;</p>
 <p>Conserto de Computadores;</p>
-<p>Manutenção em Smartphones com troca de Touch e Baterias;</p>
-<p>Recuperação de dados perdidos devido a formatação por acidente ou perda das partições de seu HD;</p>
+<p>Manutenção em Smartphones com troca de Touch e Baterias.</p>
