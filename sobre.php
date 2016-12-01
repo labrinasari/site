@@ -108,6 +108,12 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
         <div id="titulos">
             <h3>Estrutura Física</h3>
         </div>
+        <div id="imgs">
+            <img src="img/co,.jpg" height="250" width="500" alt="Nossos Computadores">
+            <img src="img/csss.jpg" height="250" width="500" alt="Nossa Área de Trabalho">
+            <img src="img/ms.jpg" height="250" width="500" alt="Nossa Área de Trabalho">
+            <img src="img/tol.jpg" height="250" width="500" alt="Algumas de Nossas Ferramentas">
+        </div>
     </div>
 </body>
 </html>

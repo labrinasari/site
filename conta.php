@@ -1,1 +1,3 @@
-<?php include("../software/index.php"); ?>
+<?php
+header("Location:../software/index.php"); 
+?>

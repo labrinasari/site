@@ -59,7 +59,7 @@
 <br>
 14° passo: Retire a bateria da placa mãe;
  <br>
-img src="tut/">
+<img src="tut/">
  <br>
 15° passo: Desparafuse a placa mãe;
  <br>
