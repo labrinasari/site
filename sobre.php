@@ -10,12 +10,10 @@ ul.animatedunderlinemenu{
   text-align:center; /* enter "left", "right", or "center" to orient the menu accordingly */
   font: 'Lato', sans-serif; /* use google custom font "Lato" */
 }
-
 ul.animatedunderlinemenu li{
   display: inline;
   margin-right:25px; /* spacing between each menu item */
 }
-
 ul.animatedunderlinemenu li a{
   position: relative;
 	display: inline-block;
@@ -26,7 +24,6 @@ ul.animatedunderlinemenu li a{
   margin-bottom: 20px; /* spacing between A elements, relevant when menu becomes multi-lined */
   letter-spacing: .1em;
 }
-
 ul.animatedunderlinemenu li a:after{
   position: absolute;
 	display: block;
@@ -41,28 +38,22 @@ ul.animatedunderlinemenu li a:after{
   -wekkit-transition: all .3s;
   transition: all .3s;
 }
-
 ul.animatedunderlinemenu li a:hover:after{
   width: 100%; /* increase underline width to 100% */
   opacity: 1;
 }
-
 /* //// Expand underline effect //// */
-
 ul.animatedunderlinemenu.expand li a:after{
   background: #CAF4F9;
 	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
 	transition: width .3s, opacity .3s, height .3s .3s;
 }
-
 ul.animatedunderlinemenu.expand li a:hover:after{
   width: 100%; /* increase underline width to 100% */
 	height: 10px; /* increase underline height to 10px */
   opacity: 1;
 }
-
 /* //// Expand underline upwards effect //// */
-
 ul.animatedunderlinemenu.expandup li a:after{
   background: #CAF4F9;
 	top: auto;
@@ -70,7 +61,6 @@ ul.animatedunderlinemenu.expandup li a:after{
 	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
 	transition: width .3s, opacity .3s, height .3s .3s;
 }
-
 ul.animatedunderlinemenu.expandup li a:hover:after{
   width: 100%; /* increase underline width to 100% */
 	height: 100%; /* increase underline height to 100% */
@@ -117,4 +107,3 @@ ul.animatedunderlinemenu.expandup li a:hover:after{
     </div>
 </body>
 </html>
-

@@ -7,7 +7,6 @@
         font-size:15px;
     }
 </style>
-</div>
 <div id="faq">
 <div id="pergunta">
 O pagamento será realizado antes de eu receber meu pedido, ou no momento do recebimento do pedido?

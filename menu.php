@@ -8,10 +8,17 @@
         <i class="fa fa-keyboard-o"></i>Produtos
     </a>
     <ul class="sub-links">
-        <li><a href="#">Categoria 1</a></li>
-        <li><a href="#">Categoria 2</a></li>
-        <li><a href="#">Categoria 3</a></li>
-        <li><a href="#">Categoria 4</a></li>
+                <li><a href="?pg=produtos">Todos</a></li>
+        <?php
+        require_once 'dao/DaoCategoria.php';
+        $DaoCategoria = DaoCategoria::getInstance();
+        $dadosCategoria = $DaoCategoria->listar();
+foreach ($dadosCategoria as $rowCategoria) {
+?>
+        <li><a href="?pg=produtos&cat=<?=$rowCategoria["id"]?>"><?=$rowCategoria["descricao"]?></a></li>        
+        <?php
+}
+        ?>
     </ul>
 </div>
 <div class="link-yellow">
@@ -34,7 +41,7 @@
     </ul>
 </div>
 <div class="link-purple">
-    <a href="?pg=127.0.0.1/software">
+    <a href="?pg=conta">
         <i class="fa fa-users"></i>Conta
     </a>
 </div>

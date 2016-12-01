@@ -5,14 +5,14 @@ require_once 'dao/DaoProduto.php';
 $DaoProduto = DaoProduto::getInstance();
 $dadosProduto = $DaoProduto->listarPromocao();
 ?>
+<ul class="photo-grid">    
 <?php
 foreach ($dadosProduto as $rowProduto) {
-?>
-<ul class="photo-grid">     
+?>   
 	<li>
             <a href="?pg=detalhes&id=<?= $rowProduto["id_produto"] ?>">
 			<figure>
-				<img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>" height="250" width="250" alt="Mouse">
+				<img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>" height="250" width="250" alt="Produto">
 				<figcaption><p><?= $rowProduto["descricao"] ?>
                                     <br>
                                     R$ <?= $rowProduto["preco"] ?>
@@ -23,10 +23,10 @@ foreach ($dadosProduto as $rowProduto) {
 			</figure>
 		</a>
 	</li>
-</ul>
     <?php
 }
 ?>
+        </ul>
 <br>
 <center><h3><a href="tutorial.php">Quer aprender à fazer uma manutenção preventiva em casa? Confira nosso artigo!</a></h3></center>
 <p>Muitas pessoas esquecem que a limpeza também é um grande fator no desempenho e saúde do seu computador.

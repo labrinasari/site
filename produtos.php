@@ -8,10 +8,11 @@ if (!isset($_GET["cat"]) || empty($_GET["cat"])) {
 }
 ?>
 <center><h3>Nossos Produtos</h3></center>
+<ul class="photo-grid">
 <?php
 foreach ($dadosProduto as $rowProduto) {
     ?>
-<ul class="photo-grid">
+
 	<li>
             <a href="?pg=detalhes&id=<?= $rowProduto["id_produto"] ?>">
 			<figure>
@@ -26,7 +27,8 @@ foreach ($dadosProduto as $rowProduto) {
 			</figure>
 		</a>
 	</li>
-</ul>
+
     <?php
 }
 ?>
+</ul>

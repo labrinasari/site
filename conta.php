@@ -1,3 +1,3 @@
 <?php
-header("Location:../software/index.php"); 
+header("Location:../software"); 
 ?>
